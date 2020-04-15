@@ -9,10 +9,9 @@ BinaryTree::BinaryTree(int payload)
 
 void BinaryTree::displayInOrder()
 {
-    BinaryTree->add(0);
     for(int i = 0; i < BinaryTree->size; ++i)
     {
-        cout<< this->getPayload(i)<< "\n";
+        cout<< this->rightChild(i)<< "\n";
     }
 }
         
@@ -20,13 +19,17 @@ void BinaryTree::displayPreOrder()
 {
     for(int i = 0; i < BinaryTree->size; ++i)
     {
-        cout<< this->getPayload(i)<< "\n";
+        cout<< this->payload(i)<< "\n";
     }
 }
 
 void BinaryTree::displayPostOrder()
 {
-
+    for(int i = 0; i < BinaryTree->size; ++i)
+    {
+        cout<< this->rightChild(i)<< "\n";
+    }
+    
 }
 
 void BinaryTree::add(int payload)
@@ -55,9 +58,4 @@ void BinaryTree::add(int payload)
             this->rightChild->add(payload);
         } 
     } 
-}
-
-int num BinaryTree::getPayload(int i)
-{
-       return getPayload(i);
 }
