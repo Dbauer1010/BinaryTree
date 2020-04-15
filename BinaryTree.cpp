@@ -14,7 +14,7 @@ void BinaryTree::displayInOrder()
         
 void BinaryTree::displayPreOrder()
 {
-
+    
 }
 
 void BinaryTree::displayPostOrder()
